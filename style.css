@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top right ,rgb(0, 246, 221),rgb(143, 217, 247));
+}
+.box{
+    height: 30vh;
+    width: 30%;
+    min-width: 200px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.box div{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#player-one{
+    background-color: rgb(254, 191, 73);
+    position: relative;
+}
+#player-two{
+    background-color: #f7748a;
+    position: relative;
+}
+p.score{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 5;
+    background-color: transparent;
+    font-size: 30px;
+}
+.box p{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: rgb(91, 91, 91);
+}
+.box .label{
+    height: 100%;
+    width: 50%;
+    background: white;
+}
+/*controllers*/
+
+.controllers{
+    height: 100px;
+    width: 30%;
+    min-width: 400px;
+    max-width: 90vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+.controllers .roll{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(28, 234, 117);
+    color: rgb(22, 157, 15);
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.controllers p{
+    position: absolute;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.controllers p.player-one-score{
+    left: 0;
+    background-color: rgb(254, 191, 73);
+}
+.controllers .player-two-score{
+    right: 0;
+    background-color: #f7748a;
+}
+
+/*reload*/
+button#reload{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(22, 209, 209);
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    color: rgb(2, 102, 109);
+    bottom: 0;
+    right: 0;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    margin: 1rem;
+}
+/*remain*/
+.remain-box{
+    height: 50px;
+    width: 150px;
+    background-color: #f7748a;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.remain-box p{
+    position: absolute;
+    background-color: rgb(250, 199, 30);
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(32, 32, 32);
+}
+.remain-box p.text{
+    left: 0;
+    width: 70%;
+}
+.remain-box p#remain{
+    right: 0;
+    width: 30%;
+}
+
+/*winner*/
+div.winner-box{
+    visibility: hidden;
+    height: 30%;
+    width: 60%;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    bottom: 5rem;
+}
+.winner-box .winner-text{
+    font-size: 30px;
+    color: rgb(244, 85, 60);
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+/*history ul*/
+ul#history{
+    height: 80vh;
+    width: 300px;
+    background-color: lightseagreen;
+    position: absolute;
+    right: 0;
+    margin: 0 2em;
+    overflow: hidden scroll;
+}
+
+/*auto roll*/
+
+#autoMode{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(230, 119, 247);
+    border: none;
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    font-size: 20px;
+    color: rgb(65, 64, 64);
+}
